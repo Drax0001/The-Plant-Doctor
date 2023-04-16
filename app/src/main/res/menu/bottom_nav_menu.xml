@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/miHome"
+        android:title="Home"
+        android:icon="@drawable/baseline_local_florist_24"/>
+    <item android:id="@+id/miChat"
+        android:title="Chat"
+        android:icon="@drawable/baseline_chat_24"/>
+    <item android:id="@+id/miStore"
+        android:title="Store"
+        android:icon="@drawable/baseline_local_grocery_store_24"/>
+    <item android:id="@+id/miYou"
+        android:title="You"
+        android:icon="@drawable/baseline_person_24"/>
+    <item android:id="@+id/miOther"
+        android:title="Other"
+        android:icon="@drawable/baseline_app_settings_alt_24"/>
+</menu>

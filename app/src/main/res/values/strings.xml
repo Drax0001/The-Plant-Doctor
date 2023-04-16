@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">The Plant Doctor</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    //Headings
+    <string name="heading_one">Quick solutions to your plant diseases</string>
+    <string name="heading_two">Quick solutions to your plant diseases</string>
+    <string name="heading_three">Quick solutions to your plant diseases</string>
+    <string name="heading_four">Quick solutions to your plant diseases</string>
+
+    //Descriptions
+    <string name="desc_one">A user friendly UI to browse various treatments for your plants</string>
+    <string name="desc_two">Lorem ipsum dolot sit amet, conseccuter, adpiscing incidunt ut laborrte eiusmud</string>
+    <string name="desc_three">Lorem ipsum dolot sit amet, conseccuter, adpiscing incidunt ut laborrte eiusmud</string>
+    <string name="desc_four">Lorem ipsum dolot sit amet, conseccuter, adpiscing incidunt ut laborrte eiusmud</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

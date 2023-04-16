@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/miHome"
+        android:icon="@drawable/baseline_local_florist_24"
+        android:title="Home" />
+    <item
+        android:id="@+id/miChat"
+        android:icon="@drawable/baseline_chat_24"
+        android:title="Chat" />
+
+    <item
+        android:id="@+id/miCamera"
+        android:icon="@drawable/baseline_camera_alt_24"
+        android:title="Detect" />
+    <item
+        android:id="@+id/miYou"
+        android:icon="@drawable/baseline_person_24"
+        android:title="Profile" />
+    <item
+        android:id="@+id/miOther"
+        android:icon="@drawable/baseline_app_settings_alt_24"
+        android:title="Other" />
+</menu>

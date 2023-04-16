@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "765558909409",
+    "project_id": "the-plant-doctor-d7a3a",
+    "storage_bucket": "the-plant-doctor-d7a3a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:765558909409:android:945e13ddbc46b2cff8caa0",
+        "android_client_info": {
+          "package_name": "com.example.theplantdoctor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "765558909409-4tpo60b3042uefif2086tjicc2hsgst1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCb74dMdHLUF_319wLtWpb3fXAxJBzToPI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "765558909409-4tpo60b3042uefif2086tjicc2hsgst1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

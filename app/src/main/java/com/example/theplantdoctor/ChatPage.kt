@@ -66,17 +66,16 @@ class ChatPage : AppCompatActivity() {
                     return@setOnItemSelectedListener true
                 }
                 R.id.miChat -> {
-                    val intent = Intent(this@ChatPage, AiRecognition::class.java)
+                    val intent = Intent(this@ChatPage, ChatPage::class.java)
                     startActivity(intent)
 
                     return@setOnItemSelectedListener true
                 }
-//                R.id.miCamera -> {
-//                    val intent = Intent(this@ChatPage, ChatPage::class.java)
-//                    startActivity(intent)
-//
-//                    return@setOnItemSelectedListener true
-//                }
+               R.id.miCamera -> {
+                   val intent = Intent(this@ChatPage, AiRecognition::class.java)
+                  startActivity(intent)
+                  return@setOnItemSelectedListener true
+              }
                 R.id.miYou -> {
                     val intent = Intent(this@ChatPage, Profile::class.java)
                     startActivity(intent)

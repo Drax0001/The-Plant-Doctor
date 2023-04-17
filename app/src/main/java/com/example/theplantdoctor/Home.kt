@@ -22,11 +22,16 @@ class Home : AppCompatActivity() {
         val chatbotAi = findViewById<CardView>(R.id.cv_chatbot_AI)
         val greetings = findViewById<TextView>(R.id.tv_greetings)
         val profilePic = findViewById<ImageView>(R.id.iv_profile )
+        val plant=findViewById<CardView>(R.id.cv_ai_plant)
 
         greetings.text = "Hello, "+ name
 
         chatbotAi.setOnClickListener {
             val intent = Intent(this@Home, Chatbot::class.java)
+            startActivity(intent)
+        }
+        plant.setOnClickListener {
+            val intent = Intent(this@Home, AiRecognition::class.java)
             startActivity(intent)
         }
 
@@ -60,13 +65,13 @@ class Home : AppCompatActivity() {
                     return@setOnItemSelectedListener true
                 }
                 R.id.miChat -> {
-                    val intent = Intent(this@Home, AiRecognition::class.java)
+                    val intent = Intent(this@Home, ChatPage::class.java)
                     startActivity(intent)
 
                     return@setOnItemSelectedListener true
                 }
                 R.id.miCamera -> {
-                    val intent = Intent(this@Home, ChatPage::class.java)
+                    val intent = Intent(this@Home, AiRecognition::class.java)
                     startActivity(intent)
 
                     return@setOnItemSelectedListener true

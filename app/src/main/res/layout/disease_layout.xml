@@ -50,7 +50,7 @@
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:text="This is a Description"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:textSize="15sp"
             app:layout_constraintBottom_toTopOf="@+id/h_3"
             app:layout_constraintEnd_toStartOf="@+id/v_2"

@@ -76,7 +76,7 @@
         android:layout_height="0dp"
         android:background="@drawable/btn_background"
         android:text="LOG IN"
-        android:textColor="@color/secondary"
+        android:textColor="@color/primary"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintDimensionRatio="6:1"
@@ -99,7 +99,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="New around here?"
-            android:textColor="@color/secondary"
+            android:textColor="@color/primary"
             android:textStyle="bold" />
 
         <Button

@@ -28,7 +28,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
-                app:dotsColor="@color/primary
+                app:dotsColor="@color/tertiary"
                 app:dotsCornerRadius="9dp"
                 app:dotsSize="16dp"
                 app:dotsSpacing="5dp"

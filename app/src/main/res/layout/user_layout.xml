@@ -23,7 +23,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/comfortaa_semibold"
             android:text="Berthold"
-            android:textColor="@color/secondary"
+            android:textColor="@color/tertiary"
             android:textSize="30sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="@+id/v1"

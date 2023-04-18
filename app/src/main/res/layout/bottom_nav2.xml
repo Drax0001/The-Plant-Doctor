@@ -6,13 +6,16 @@
     android:layout_height="match_parent">
 
     <me.ibrahimsn.lib.SmoothBottomBar
+        android:id="@+id/bottom_nav"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         app:backgroundColor="@color/primary"
+        app:indicatorColor="@color/tertiary"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="@+id/h1"
         app:menu="@menu/menu_nav"
         app:textColor="@color/tertiary" />
+
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/h1"

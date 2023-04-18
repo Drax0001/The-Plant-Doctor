@@ -53,6 +53,8 @@ class Profile : AppCompatActivity() {
         ivProfilePicture = findViewById(R.id.iv_profile_pic)
 
 
+
+
         ivProfilePicture.setOnClickListener {
             // Open gallery to select a new profile picture
             val intent = Intent(Intent.ACTION_PICK)
@@ -112,6 +114,8 @@ class Profile : AppCompatActivity() {
 
         //Bottom nav click listeners
         val bottomNavigationView = findViewById<BottomNavigationView>(R.id.bottom_nav)
+
+        bottomNavigationView.bringToFront()
 
         bottomNavigationView?.setOnItemSelectedListener { item ->
             when (item.itemId) {

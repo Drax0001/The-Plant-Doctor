@@ -325,7 +325,7 @@
 
 
     <include
-        layout="@layout/bottom_nav" />
+        layout="@layout/bottom_nav2" />
 
     <!--    guidelines-->
 

@@ -31,6 +31,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <ImageView
+                android:id="@+id/profile_pic"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:src="@drawable/undraw_pic_profile_re_7g2h"

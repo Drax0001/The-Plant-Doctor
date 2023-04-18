@@ -47,7 +47,7 @@
                 android:layout_marginLeft="5dp"
                 android:fontFamily="@font/karla_extrabold"
                 android:text="Berthold"
-                android:textColor="@color/secondary"
+                android:textColor="@color/tertiary"
                 android:textSize="30sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="@+id/v5"

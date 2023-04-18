@@ -49,7 +49,7 @@
             android:layout_gravity="center"
             android:layout_weight="48"
             android:layout_marginStart="5dp"
-            android:textColor="@color/secondary"
+            android:textColor="@color/tertiary"
             android:textSize="20sp"
             android:fontFamily="@font/karla_extrabold"
             android:padding="10dp"

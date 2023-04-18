@@ -23,18 +23,21 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:text="Profile"
+                android:fontFamily="@font/karla_extrabold"
                 android:textColor="@color/primary"
-                android:textSize="40sp"
+                android:textSize="50sp"
                 app:layout_constraintBottom_toTopOf="@+id/h_2"
                 app:layout_constraintEnd_toStartOf="@+id/v_2"
                 app:layout_constraintStart_toStartOf="@+id/v_1"
                 app:layout_constraintTop_toTopOf="parent" />
 
-            <ImageView
+            <com.airbnb.lottie.LottieAnimationView
                 android:id="@+id/profile_pic"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
-                android:src="@drawable/undraw_pic_profile_re_7g2h"
+                app:lottie_rawRes="@raw/profile_user"
+                app:lottie_loop="true"
+                app:lottie_autoPlay="true"
                 app:layout_constraintBottom_toTopOf="@+id/h_2"
                 app:layout_constraintEnd_toStartOf="@+id/v_3"
                 app:layout_constraintStart_toStartOf="@+id/v_2"
@@ -88,6 +91,13 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@drawable/onboarding_bg">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:lottie_rawRes="@raw/swinging_plant"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"/>
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/profile_card"

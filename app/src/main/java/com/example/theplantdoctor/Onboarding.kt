@@ -19,7 +19,6 @@ class Onboarding : AppCompatActivity() {
     private lateinit var viewPager: ViewPager
     private lateinit var viewPagerAdapter: ViewPagerAdapter
 
-    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_onboarding)
@@ -31,7 +30,6 @@ class Onboarding : AppCompatActivity() {
         val dotsIndicator = findViewById<DotsIndicator>(R.id.dots_indicator)
         val btn = findViewById<Button>(R.id.btn)
         val btnSkip = findViewById<Button>(R.id.btn_skip_intro)
-        val imgSlide = findViewById<ImageView>(R.id.ivfirstslide)
 
 //        animationDrawable.setEnterFadeDuration(2000)
 //        animationDrawable.setExitFadeDuration(2000)
@@ -75,7 +73,7 @@ class Onboarding : AppCompatActivity() {
 //                    animationDrawable.setExitFadeDuration(2000)
 //                    animationDrawable.start()
 //                }
-                if(position == 3) {
+                if(position == 4) {
 //                    relativeLayout.setBackgroundResource(R.drawable.gradient_animation)
 //                    val animationDrawable = relativeLayout.background as AnimationDrawable
 //                    animationDrawable.setEnterFadeDuration(2000)
@@ -99,7 +97,7 @@ class Onboarding : AppCompatActivity() {
         }
 
         btnSkip.setOnClickListener {
-            val intent = Intent(this@Onboarding, Home::class.java)
+            val intent = Intent(this@Onboarding, GetStarted::class.java)
             startActivity(intent)
             finish()
         }

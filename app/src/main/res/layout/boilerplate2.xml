@@ -21,6 +21,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:text="Common Diseases"
+                android:fontFamily="@font/karla_extrabold"
                 android:textColor="@color/primary"
                 android:textSize="40sp"
                 app:layout_constraintBottom_toTopOf="@+id/h_2"
@@ -28,10 +29,12 @@
                 app:layout_constraintStart_toStartOf="@+id/v_1"
                 app:layout_constraintTop_toTopOf="parent" />
 
-            <ImageView
+            <com.airbnb.lottie.LottieAnimationView
                 android:layout_width="0dp"
                 android:layout_height="0dp"
-                android:src="@drawable/chat_bot"
+                app:lottie_rawRes="@raw/book_az"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
                 app:layout_constraintBottom_toTopOf="@+id/h_2"
                 app:layout_constraintEnd_toStartOf="@+id/v_3"
                 app:layout_constraintStart_toStartOf="@+id/v_2"

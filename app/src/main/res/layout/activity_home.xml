@@ -177,7 +177,7 @@
                 <TextView
                     android:id="@+id/textView3"
                     android:layout_width="wrap_content"
-                    android:layout_height="105dp"
+                    android:layout_height="wrap_content"
                     android:background="@drawable/btn_background"
                     android:padding="5dp"
                     android:fontFamily="@font/karla_extrabold"
@@ -227,7 +227,7 @@
                 <TextView
                     android:id="@+id/textView4"
                     android:layout_width="wrap_content"
-                    android:layout_height="105dp"
+                    android:layout_height="wrap_content"
                     android:background="@drawable/btn_background"
                     android:paddingVertical="20dp"
                     android:text="AI Chatbot at your service"
@@ -235,9 +235,6 @@
                     android:fontFamily="@font/karla_extrabold"
                     android:textAlignment="center"
                     android:textSize="25sp"
-                    android:clickable="true"
-                    android:focusable="true"
-                    android:foreground="?selectableItemBackground"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
@@ -245,7 +242,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="AI model to recognise plant diseases through picture"
+                    android:text="Get expert advice on your plants from our AI chat support"
                     android:textAlignment="center"
                     android:fontFamily="@font/comfortaa_regular"
                     android:textSize="16sp"
@@ -283,19 +280,19 @@
                 android:text="Plant Care Tip"
                 android:textAllCaps="true"
                 android:textColor="@color/primary"
-                android:textSize="24.27sp"
+                android:textSize="27sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="@+id/guideline13"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/textView8"
+                android:id="@+id/tv_tips"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/comfortaa_semibold"
                 android:text="Pick plants that work with your schedule"
                 android:textColor="@color/primary"
-                android:textSize="15sp"
+                android:textSize="18sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="@+id/guideline13"
@@ -325,7 +322,7 @@
 
 
     <include
-        layout="@layout/bottom_nav2" />
+        layout="@layout/bottom_nav" />
 
     <!--    guidelines-->
 

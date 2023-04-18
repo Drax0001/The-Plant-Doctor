@@ -115,8 +115,6 @@ class Profile : AppCompatActivity() {
         //Bottom nav click listeners
         val bottomNavigationView = findViewById<BottomNavigationView>(R.id.bottom_nav)
 
-        bottomNavigationView.bringToFront()
-
         bottomNavigationView?.setOnItemSelectedListener { item ->
             when (item.itemId) {
                 R.id.miHome-> {

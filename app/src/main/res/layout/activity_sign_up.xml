@@ -9,7 +9,7 @@
     <com.airbnb.lottie.LottieAnimationView
         android:layout_width="0dp"
         android:layout_height="0dp"
-        app:lottie_rawRes="@raw/plant_growing"
+        app:lottie_rawRes="@raw/signup"
         app:lottie_loop="false"
         app:lottie_autoPlay="true"
         app:layout_constraintBottom_toTopOf="@+id/h_1"
@@ -47,7 +47,7 @@
         android:background="@drawable/edt_bacground"
         android:hint="E-mail"
         android:inputType="textEmailAddress"
-        android:drawableEnd="@drawable/baseline_mark_email_read_24"
+        android:drawableEnd="@drawable/baseline_email_24"
         android:paddingHorizontal="16dp"
         android:textColorHint="@color/primary"
         app:layout_constraintBottom_toTopOf="@+id/edtUsername"

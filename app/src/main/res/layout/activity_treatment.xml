@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -60,7 +61,7 @@
                 android:padding="5dp"
                 android:text="Powdery Mildew"
                 android:textAllCaps="true"
-                android:textColor="@color/tertiary"
+                android:textColor="@color/primary"
                 android:textSize="44.5sp"
                 app:layout_constraintBottom_toTopOf="@+id/h2"
                 app:layout_constraintEnd_toStartOf="@+id/v20"
@@ -136,8 +137,8 @@
 
                     <RelativeLayout
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@color/primary"
+                        android:layout_height="202dp"
+                        android:background="@color/tertiary"
                         android:padding="10dp">
 
                         <TextView
@@ -147,6 +148,7 @@
                             android:fontFamily="@font/karla_extrabold"
                             android:text="Problem"
                             android:textAllCaps="true"
+                            android:textColor="@color/primary"
                             android:textSize="27.5sp"
                             android:textStyle="bold" />
 
@@ -155,11 +157,11 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="30dp"
+                            android:fontFamily="@font/comfortaa_semibold"
                             android:lineHeight="23dp"
                             android:text="Powdery mildew leaves a telltale white dusty coating on leaves, stems and flowers. Caused by a fungus, it affects a number of plants, including lilacs, apples, grapes, cucumbers, peas, phlox, daisies and roses."
                             android:textAlignment="center"
-                            android:textColor="@color/white"
-                            android:fontFamily="@font/comfortaa_semibold"
+                            android:textColor="@color/primary"
                             android:textSize="17sp" />
                     </RelativeLayout>
 
@@ -215,7 +217,7 @@
                     <RelativeLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="@color/primary"
+                        android:background="@color/tertiary"
                         android:padding="10dp">
 
                         <TextView
@@ -223,6 +225,7 @@
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/karla_extrabold"
                             android:text="Treatment"
+                            android:textColor="@color/primary"
                             android:layout_centerHorizontal="true"
                             android:textAllCaps="true"
                             android:textSize="27.5sp"
@@ -236,7 +239,7 @@
                             android:lineHeight="23dp"
                             android:text="Rake up and destroy infected leaves to reduce the spread of spores. Also, give plants good drainage and ample air circulation. Avoid overhead watering at night; mid-morning is preferred to allow foliage to dry before evening. Commercial fungicides are available for powdery mildew, or you can spray with a solution of one tsp. baking soda and one quart of water as recommended by George “Doc” and Katy Abraham, authors of The Green Thumb Garden Handbook."
                             android:textAlignment="center"
-                            android:textColor="@color/white"
+                            android:textColor="@color/primary"
                             android:fontFamily="@font/comfortaa_semibold"
                             android:textSize="17sp" />
                     </RelativeLayout>

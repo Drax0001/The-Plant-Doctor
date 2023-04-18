@@ -138,6 +138,7 @@
                             android:text="Powdery mildew leaves a telltale white dusty coating on leaves, stems and flowers. Caused by a fungus, it affects a number of plants, including lilacs, apples, grapes, cucumbers, peas, phlox, daisies and roses."
                             android:textAlignment="center"
                             android:textColor="@color/white"
+                            android:fontFamily="@font/comfortaa_semibold"
                             android:textSize="17sp" />
                     </RelativeLayout>
 
@@ -201,6 +202,7 @@
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/karla_extrabold"
                             android:text="Treatment"
+                            android:layout_centerHorizontal="true"
                             android:textAllCaps="true"
                             android:textSize="27.5sp"
                             android:textStyle="bold" />
@@ -214,6 +216,7 @@
                             android:text="Rake up and destroy infected leaves to reduce the spread of spores. Also, give plants good drainage and ample air circulation. Avoid overhead watering at night; mid-morning is preferred to allow foliage to dry before evening. Commercial fungicides are available for powdery mildew, or you can spray with a solution of one tsp. baking soda and one quart of water as recommended by George “Doc” and Katy Abraham, authors of The Green Thumb Garden Handbook."
                             android:textAlignment="center"
                             android:textColor="@color/white"
+                            android:fontFamily="@font/comfortaa_semibold"
                             android:textSize="17sp" />
                     </RelativeLayout>
                 </androidx.cardview.widget.CardView>

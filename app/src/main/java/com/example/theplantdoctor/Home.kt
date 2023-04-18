@@ -17,6 +17,7 @@ class Home : AppCompatActivity() {
         supportActionBar?.hide()
 
         val name = intent.getStringExtra("email")
+        val username = intent.getStringExtra("username")
         val cardView = findViewById<CardView>(R.id.cv_plant_diseases)
         val chevron = findViewById<ImageView>(R.id.iv_chevron)
         val chatbotAi = findViewById<CardView>(R.id.cv_chatbot_AI)
@@ -24,7 +25,7 @@ class Home : AppCompatActivity() {
         val profilePic = findViewById<ImageView>(R.id.iv_profile )
         val plant=findViewById<CardView>(R.id.cv_ai_plant)
 
-        greetings.text = "Hello, "+ name
+        greetings.text = "Hello, "+ username
 
         chatbotAi.setOnClickListener {
             val intent = Intent(this@Home, Chatbot::class.java)

@@ -4,6 +4,7 @@ import android.annotation.SuppressLint
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Patterns
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
@@ -51,6 +52,21 @@ class SignUp : AppCompatActivity() {
     }
 
     private fun signUp(name:String, email: String, password: String){
+        if(email.isEmpty()) {
+            edtEmail.error = "Please enter your email"
+            edtEmail.requestFocus()
+            return
+        }
+        if(!Patterns.EMAIL_ADDRESS.matcher(edtEmail.text.toString()).matches()) {
+            edtEmail.error = "Please enter a valid email"
+            return
+        }
+        if(password.isEmpty()) {
+            edtPassword.error = "Oops! Enter your password"
+            edtPassword.requestFocus()
+            return
+        }
+
         //logic for creating user
         mAuth.createUserWithEmailAndPassword(email, password)
             .addOnCompleteListener(this) { task ->

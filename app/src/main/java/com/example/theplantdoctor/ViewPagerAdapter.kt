@@ -9,6 +9,7 @@ import android.widget.RelativeLayout
 import android.widget.TextView
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.viewpager.widget.PagerAdapter
+import com.airbnb.lottie.LottieAnimationView
 
 class ViewPagerAdapter(val context: Context) : PagerAdapter() {
 
@@ -16,24 +17,27 @@ class ViewPagerAdapter(val context: Context) : PagerAdapter() {
 
     //array of images, headers and descriptions
     val imgArray = arrayOf(
-        R.drawable.first_slide,
-        R.drawable.second_slide,
         R.drawable.third_slide,
-        R.drawable.fourth_slide
+        R.drawable.doctors_slide,
+        R.drawable.fourth_slide,
+        R.drawable.first_slide,
+        R.drawable.second_slide
     )
 
     val headerArray = arrayOf(
-        "Quick solutions to your plant diseases",
-        "Quick solutions to your plant diseases",
-        "Quick solutions to your plant diseases",
-        "Quick solutions to your plant diseases"
+        "Welcome to the plant Doctor",
+        "Doctors Available to Chat",
+        "Plant Care Tips",
+        "Plant Disease Encyclopedia",
+        "AI Chat Support"
     )
 
     val descArray = arrayOf(
-        "A user friendly UI to browse various treatments for your plants",
-        "Lorem ipsum dolot sit amet, conseccuter, adpiscing incidunt ut laborrte eiusmud",
-        "Lorem ipsum dolot sit amet, conseccuter, adpiscing incidunt ut laborrte eiusmud",
-        "Lorem ipsum dolot sit amet, conseccuter, adpiscing incidunt ut laborrte eiusmud"
+        "",
+        "Talk to a certified plant doctor for expert solutions to your plant problems",
+        "Get the most out of your plants with our personalized care recommendations",
+        "Identify and treat any plant disease with our encyclopedia of symptoms and solutions",
+        "Our AI chat support is available 24/7 to help you with your plant problems"
     )
 
     override fun getCount(): Int {

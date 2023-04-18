@@ -59,13 +59,28 @@
                 android:fontFamily="@font/karla_extrabold"
                 android:padding="5dp"
                 android:text="Powdery Mildew"
-                android:textAlignment="center"
                 android:textAllCaps="true"
                 android:textColor="@color/tertiary"
                 android:textSize="44.5sp"
                 app:layout_constraintBottom_toTopOf="@+id/h2"
-                app:layout_constraintEnd_toStartOf="@+id/v2"
+                app:layout_constraintEnd_toStartOf="@+id/v20"
                 app:layout_constraintStart_toStartOf="@+id/v1"
+                app:layout_constraintTop_toTopOf="@+id/h1" />
+
+            <Button
+                android:id="@+id/btn_add_plant"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@color/tertiary"
+                android:fontFamily="@font/karla_extrabold"
+                android:text="Add Plant"
+                android:paddingVertical="10dp"
+                android:elevation="15dp"
+                android:textColor="@color/primary"
+                android:textSize="25sp"
+                app:layout_constraintBottom_toTopOf="@+id/h2"
+                app:layout_constraintEnd_toStartOf="@+id/v2"
+                app:layout_constraintStart_toStartOf="@+id/v20"
                 app:layout_constraintTop_toTopOf="@+id/h1" />
 
             <androidx.constraintlayout.widget.Guideline
@@ -80,6 +95,12 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 app:layout_constraintGuide_percent="0.95" />
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/v20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.7" />
             <androidx.constraintlayout.widget.Guideline
                 android:id="@+id/h1"
                 android:layout_width="wrap_content"

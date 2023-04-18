@@ -9,10 +9,11 @@
     <TextView
         android:id="@+id/tvheader1"
         android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_height="wrap_content"
         android:fontFamily="@font/karla_extrabold"
         android:text="@string/heading_one"
         android:textAlignment="center"
+        android:textAllCaps="true"
         android:textColor="@color/primary"
         android:textSize="40.45sp"
         app:layout_constraintStart_toStartOf="@+id/v_1"

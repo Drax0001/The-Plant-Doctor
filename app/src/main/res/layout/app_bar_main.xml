@@ -48,6 +48,13 @@
             android:layout_height="match_parent"
             android:background="@color/primary">
 
+            <com.airbnb.lottie.LottieAnimationView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:lottie_rawRes="@raw/swinging_plant"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"/>
+
             <androidx.cardview.widget.CardView
                 android:layout_width="0dp"
                 android:layout_height="0dp"
@@ -159,7 +166,7 @@
                 android:fontFamily="@font/comfortaa_bold"
                 android:text=""
                 android:textAlignment="center"
-                android:textColor="@color/secondary"
+                android:textColor="@color/tertiary"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/v_2"

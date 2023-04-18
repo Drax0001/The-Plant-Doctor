@@ -46,7 +46,7 @@
         android:inputType="textEmailAddress"
         android:paddingHorizontal="20dp"
         android:textColorHint="@color/primary"
-        android:drawableEnd="@drawable/baseline_mark_email_read_24"
+        android:drawableEnd="@drawable/baseline_email_24"
         android:textSize="22sp"
         app:layout_constraintBottom_toTopOf="@+id/edtPassword"
         app:layout_constraintEnd_toStartOf="@+id/v_2"

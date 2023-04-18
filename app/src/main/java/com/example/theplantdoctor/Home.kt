@@ -1,14 +1,22 @@
 package com.example.theplantdoctor
 
 import android.annotation.SuppressLint
+import android.content.ContentValues
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
+import android.view.View
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.cardview.widget.CardView
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.android.material.floatingactionbutton.FloatingActionButton
+import com.google.firebase.database.DataSnapshot
+import com.google.firebase.database.DatabaseError
+import com.google.firebase.database.FirebaseDatabase
+import com.google.firebase.database.ValueEventListener
+import kotlin.random.Random
 
 class Home : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -16,16 +24,27 @@ class Home : AppCompatActivity() {
         setContentView(R.layout.activity_home)
         supportActionBar?.hide()
 
-        val name = intent.getStringExtra("email")
-        val username = intent.getStringExtra("username")
         val cardView = findViewById<CardView>(R.id.cv_plant_diseases)
         val chevron = findViewById<ImageView>(R.id.iv_chevron)
         val chatbotAi = findViewById<CardView>(R.id.cv_chatbot_AI)
         val greetings = findViewById<TextView>(R.id.tv_greetings)
         val profilePic = findViewById<ImageView>(R.id.iv_profile )
-        val plant=findViewById<CardView>(R.id.cv_ai_plant)
+        val plant = findViewById<CardView>(R.id.cv_ai_plant)
+        val database = FirebaseDatabase.getInstance().reference
+        val careTips = findViewById<TextView>(R.id.tv_tips)
 
-        greetings.text = "Hello, "+ username
+        val tipsArray = arrayOf(
+            "Choose plants based on your light",
+            "Pick plants that work with your schedule",
+            "Be mindful when watering",
+            "Raise humidity levels when needed",
+            "Always keep temperatures stable",
+            "Know when to skip the fertilizer",
+            "Shop from a reliable source",
+            "Show a little TLC at first",
+            "Don’t be scared to repot",
+            "Keep drainage in mind"
+        )
 
         chatbotAi.setOnClickListener {
             val intent = Intent(this@Home, Chatbot::class.java)
@@ -87,5 +106,12 @@ class Home : AppCompatActivity() {
             }
             false
         }
+
+        fun  plantCareTips(){
+            val randomTip = Random.nextInt(9)
+            careTips.text = tipsArray[randomTip]
+        }
+
+        plantCareTips()
     }
 }

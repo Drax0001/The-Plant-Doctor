@@ -66,10 +66,11 @@
         android:id="@+id/rv_users"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:layout_marginTop="30dp"
         app:layout_constraintBottom_toTopOf="@+id/h2"
         app:layout_constraintEnd_toStartOf="@+id/v2"
         app:layout_constraintStart_toStartOf="@+id/v1"
-        app:layout_constraintTop_toTopOf="@+id/h1"
+        app:layout_constraintTop_toTopOf="@+id/h3"
         tools:listitem="@layout/user_layout" />
 
     <androidx.constraintlayout.widget.Guideline

@@ -13,7 +13,7 @@
         android:fontFamily="@font/karla_extrabold"
         android:text="@string/heading_one"
         android:textAlignment="center"
-        android:textColor="@color/secondary"
+        android:textColor="@color/primary"
         android:textSize="40.45sp"
         app:layout_constraintStart_toStartOf="@+id/v_1"
         app:layout_constraintEnd_toStartOf="@+id/v_2"

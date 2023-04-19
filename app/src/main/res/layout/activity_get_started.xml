@@ -39,7 +39,7 @@
             android:fontFamily="@font/karla_extrabold"
             android:padding="10dp"
             android:textSize="20sp"
-            android:text="LOGIN" />
+            android:text="LOGIN"/>
 
         <Button
             android:id="@+id/btn_signup_started"

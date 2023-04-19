@@ -12,5 +12,6 @@
     <color name="primary">#224722</color>
     <color name="secondary">#00333130</color>
     <color name="tertiary">#E6EFAE</color>
+    <color name="Green">#E4E8CB</color>
     <color name="complementary">#efe7db</color>
 </resources>

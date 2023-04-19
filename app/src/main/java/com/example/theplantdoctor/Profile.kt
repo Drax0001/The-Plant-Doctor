@@ -40,6 +40,11 @@ class Profile : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_profile)
+        val gall = findViewById<TextView>(R.id.view1)
+        gall.setOnClickListener {
+            startActivity(Intent(this, Garden::class.java))
+        }
+
 
         mAuth = FirebaseAuth.getInstance()
         db = FirebaseFirestore.getInstance()

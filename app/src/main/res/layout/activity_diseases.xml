@@ -15,7 +15,6 @@
         android:id="@+id/rv_disease_cards"
         android:layout_width="0dp"
         android:layout_height="0dp"
-
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/v_2"
         app:layout_constraintStart_toStartOf="@+id/v_1"

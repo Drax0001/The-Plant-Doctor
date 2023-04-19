@@ -70,7 +70,7 @@ class AiRecognition : AppCompatActivity() {
         bottomNavigationView?.setOnItemSelectedListener { item ->
             when (item.itemId) {
                 R.id.miHome-> {
-                    val intent = Intent(this@AiRecognition, Home::class.java)
+                    val intent = Intent(this@AiRecognition, Homepage::class.java)
                     startActivity(intent)
 
                     return@setOnItemSelectedListener true

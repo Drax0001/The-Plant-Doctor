@@ -235,10 +235,10 @@
                     android:background="@color/secondary">
 
                     <TextView
-                        android:id="@+id/textView"
+                       android:id="@+id/view1"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:text="Favorites"
+                        android:text="Plant Garden"
                         android:textSize="23sp"
                         android:textColor="@color/primary"
                         app:layout_constraintBottom_toTopOf="@+id/h10"
@@ -277,7 +277,7 @@
                     <TextView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:text="Favorites"
+                        android:text="My plants"
                         android:textSize="23sp"
                         android:textColor="@color/primary"
                         app:layout_constraintBottom_toBottomOf="parent"

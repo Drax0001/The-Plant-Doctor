@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Garden"
+    android:layout_width="409dp"
+    android:layout_height="729dp"
+    app:layout_editor_absoluteX="1dp"
+    app:layout_editor_absoluteY="1dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/tertiary">
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="30dp"
+            android:text="CHOOSE\nA PLANT"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textSize="26sp"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent">
+
+        </TextView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/item1"
+            android:layout_width="150dp"
+            android:layout_height="240dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="8dp"
+            app:cardBackgroundColor="@color/Green"
+            app:cardCornerRadius="25dp"
+            app:contentPaddingTop="30dp"
+            app:contentPaddingBottom="30dp"
+            app:layout_constraintStart_toStartOf="@id/tv_title"
+            app:layout_constraintTop_toBottomOf="@id/tv_title">
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/plant12"
+                android:scaleType="centerCrop"
+                android:layout_gravity="bottom|center_horizontal">
+
+            </ImageView>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/item2"
+            android:layout_width="150dp"
+            android:layout_height="240dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="175dp"
+            app:cardBackgroundColor="@color/Green"
+            app:cardCornerRadius="25dp"
+            app:contentPaddingTop="30dp"
+            app:contentPaddingBottom="30dp"
+            app:layout_constraintStart_toStartOf="@id/item1"
+            app:layout_constraintTop_toBottomOf="@id/tv_title">
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/plant13"
+                android:scaleType="centerCrop"
+                android:layout_gravity="bottom|center_horizontal">
+
+            </ImageView>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/item3"
+            app:cardPreventCornerOverlap="false"
+            android:layout_width="150dp"
+            android:layout_height="240dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="8dp"
+            app:cardBackgroundColor="@color/Green"
+            app:cardCornerRadius="25dp"
+            app:contentPaddingTop="30dp"
+            app:contentPaddingBottom="30dp"
+            app:layout_constraintStart_toStartOf="@id/item1"
+            app:layout_constraintTop_toBottomOf="@id/item1">
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/plant14"
+                android:scaleType="centerCrop"
+                android:layout_gravity="bottom|center_horizontal">
+
+            </ImageView>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/item4"
+            app:cardPreventCornerOverlap="false"
+            android:layout_width="150dp"
+            android:layout_height="240dp"
+            android:layout_marginTop="20dp"
+            app:cardBackgroundColor="@color/Green"
+            app:cardCornerRadius="25dp"
+            app:contentPaddingTop="30dp"
+            app:contentPaddingBottom="30dp"
+            app:layout_constraintStart_toStartOf="@id/item2"
+            app:layout_constraintTop_toBottomOf="@id/item2">
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/plant15"
+                android:scaleType="centerCrop"
+                android:layout_gravity="bottom|center_horizontal">
+
+            </ImageView>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/item5"
+            app:cardPreventCornerOverlap="false"
+            android:layout_width="150dp"
+            android:layout_height="240dp"
+            android:layout_marginTop="20dp"
+            app:cardBackgroundColor="@color/Green"
+            app:cardCornerRadius="25dp"
+            app:contentPaddingTop="30dp"
+            app:contentPaddingBottom="30dp"
+            app:layout_constraintStart_toStartOf="@id/item3"
+            app:layout_constraintTop_toBottomOf="@id/item3">
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/plant1"
+                android:scaleType="centerCrop"
+                android:layout_gravity="bottom|center_horizontal">
+
+            </ImageView>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/item6"
+            app:cardPreventCornerOverlap="false"
+            android:layout_width="150dp"
+            android:layout_height="240dp"
+            android:layout_marginTop="20dp"
+            app:cardBackgroundColor="@color/Green"
+            app:cardCornerRadius="25dp"
+            app:contentPaddingTop="30dp"
+            app:contentPaddingBottom="30dp"
+            app:layout_constraintStart_toStartOf="@id/item4"
+            app:layout_constraintTop_toBottomOf="@id/item4">
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/plant2"
+                android:scaleType="centerCrop"
+                android:layout_gravity="bottom|center_horizontal">
+
+            </ImageView>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/item7"
+            app:cardPreventCornerOverlap="false"
+            android:layout_width="150dp"
+            android:layout_height="240dp"
+            android:layout_marginTop="20dp"
+            app:cardBackgroundColor="@color/Green"
+            app:cardCornerRadius="25dp"
+            app:contentPaddingTop="30dp"
+            app:contentPaddingBottom="30dp"
+            app:layout_constraintStart_toStartOf="@id/item5"
+            app:layout_constraintTop_toBottomOf="@id/item5">
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/plant3"
+                android:scaleType="centerCrop"
+                android:layout_gravity="bottom|center_horizontal">
+
+            </ImageView>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/item8"
+            app:cardPreventCornerOverlap="false"
+            android:layout_width="150dp"
+            android:layout_height="240dp"
+            android:layout_marginTop="20dp"
+            app:cardBackgroundColor="@color/Green"
+            app:cardCornerRadius="25dp"
+            app:contentPaddingTop="30dp"
+            app:contentPaddingBottom="30dp"
+            app:layout_constraintStart_toStartOf="@id/item6"
+            app:layout_constraintTop_toBottomOf="@id/item6">
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/plant4"
+                android:scaleType="centerCrop"
+                android:layout_gravity="bottom|center_horizontal">
+
+            </ImageView>
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

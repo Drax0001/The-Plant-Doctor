@@ -88,6 +88,7 @@ class Home : AppCompatActivity() {
                     val intent = Intent(this@Home, ChatPage::class.java)
                     startActivity(intent)
 
+
                     return@setOnItemSelectedListener true
                 }
                 R.id.miCamera -> {

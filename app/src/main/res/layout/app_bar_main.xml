@@ -101,7 +101,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/comfortaa_regular"
-                        android:text="NOTE: After obtaining the diagnostics for your plant, go to"
+                        android:text="NOTE: After obtaining the diagnostics for your plant, go to our plant disease Encyclopedia for treatment"
                         android:textColor="@color/primary"
                         android:textSize="13sp"
                         app:layout_constraintBottom_toBottomOf="parent"

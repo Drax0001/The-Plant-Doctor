@@ -5,6 +5,7 @@ import android.app.ProgressDialog
 import android.content.Intent
 import android.graphics.Bitmap
 import android.graphics.BitmapFactory
+import android.graphics.Color
 import android.graphics.Matrix
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
@@ -17,6 +18,8 @@ import androidx.activity.result.contract.ActivityResultContracts
 import androidx.annotation.RequiresApi
 import androidx.core.app.ActivityCompat
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.klinker.android.link_builder.Link
+import com.klinker.android.link_builder.applyLinks
 import okio.IOException
 
 class AiRecognition : AppCompatActivity() {
@@ -36,6 +39,7 @@ class AiRecognition : AppCompatActivity() {
     private lateinit var mDetect: Button
     private lateinit var photo: ImageView
     private lateinit var mresults: TextView
+    private lateinit var diseaseLink: TextView
 
     private val resultContract = registerForActivityResult(ActivityResultContracts.StartActivityForResult()){ result: ActivityResult ->
 
@@ -58,6 +62,8 @@ class AiRecognition : AppCompatActivity() {
         mresults = findViewById(R.id.tv_results)
 
         mCategorization = Categorization(assets, mModelPath, mLabelPath, mInputSize)
+
+        linkToDisease()
 
         val bottomNavigationView = findViewById<BottomNavigationView>(R.id.bottom_nav)
 
@@ -120,6 +126,19 @@ class AiRecognition : AppCompatActivity() {
                 mresults.text = results?.title + "\n Confidence: "+results?.confidence
             }, 2000)
         }
+    }
+
+    private fun linkToDisease() {
+        val encyclopediaLink : Link = Link("Encyclopedia")
+            .setTextColor(Color.BLUE)
+            .setTextColorOfHighlightedLink(Color.GREEN)
+            .setUnderlined(true)
+            .setBold(false)
+            .setOnClickListener {
+                startActivity(Intent(this@AiRecognition, Diseases::class.java))
+            }
+        diseaseLink = findViewById(R.id.tv_note_message)
+        diseaseLink.applyLinks(encyclopediaLink)
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {

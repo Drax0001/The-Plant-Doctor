@@ -30,6 +30,7 @@
         android:textSize="45sp"
         app:layout_constraintBottom_toTopOf="@+id/guideline23"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline22" />
 
     <androidx.constraintlayout.widget.Guideline

@@ -12,8 +12,13 @@ import androidx.cardview.widget.CardView
 //Recycler Adapater of the Newhome
 
 class RecyclerPlant constructor(private val getActivity: Homepage,
-                                private val plantList: List<Plant>):
+                                private var plantList: List<Plant>):
                                 RecyclerView.Adapter<RecyclerPlant.MyViewHolder>() {
+
+    fun setfilteredList(plantList: List<Plant>){
+        this.plantList=plantList
+        notifyDataSetChanged()
+    }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.homelayout, parent, false)
@@ -22,6 +27,8 @@ class RecyclerPlant constructor(private val getActivity: Homepage,
 
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
         holder.plt1.setImageResource(plantList[position].image)
+        holder.imgTitle.text = plantList[position].title
+
     }
     override fun getItemCount(): Int {
         return plantList.size
@@ -29,6 +36,7 @@ class RecyclerPlant constructor(private val getActivity: Homepage,
 
     class MyViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val plt1: ImageView = itemView.findViewById(R.id.plt1)
+        val imgTitle: TextView = itemView.findViewById(R.id.Title)
         val item1: CardView = itemView.findViewById(R.id.item1)
     }
 }

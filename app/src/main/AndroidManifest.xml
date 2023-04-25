@@ -18,6 +18,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ThePlantDoctor"
         tools:targetApi="31">
+
         <activity
             android:name=".Garden"
             android:exported="false" />
@@ -68,6 +69,9 @@
             android:exported="false" />
         <activity
             android:name=".Login"
+            android:exported="false" />
+        <activity
+            android:name=".Homepage"
             android:exported="false" />
         <activity
             android:name=".Splash"

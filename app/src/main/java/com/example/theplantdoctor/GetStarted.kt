@@ -20,7 +20,7 @@ class GetStarted : AppCompatActivity() {
             val currentUser = mAuth.currentUser
 
             if (currentUser!=null){
-                startActivity(Intent(this@GetStarted, Home::class.java))
+                startActivity(Intent(this@GetStarted, Homepage::class.java))
             } else {
             startActivity(Intent(this@GetStarted, Login::class.java))
             }

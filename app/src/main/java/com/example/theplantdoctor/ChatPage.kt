@@ -60,7 +60,7 @@ class ChatPage : AppCompatActivity() {
         bottomNavigationView?.setOnItemSelectedListener { item ->
             when (item.itemId) {
                 R.id.miHome-> {
-                    val intent = Intent(this@ChatPage, Home::class.java)
+                    val intent = Intent(this@ChatPage, Homepage::class.java)
                     startActivity(intent)
 
                     return@setOnItemSelectedListener true

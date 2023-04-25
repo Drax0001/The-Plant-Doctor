@@ -46,6 +46,8 @@ class Profile : AppCompatActivity() {
         }
 
 
+
+
         mAuth = FirebaseAuth.getInstance()
         db = FirebaseFirestore.getInstance()
         storageRef = FirebaseStorage.getInstance().reference
@@ -123,7 +125,7 @@ class Profile : AppCompatActivity() {
         bottomNavigationView?.setOnItemSelectedListener { item ->
             when (item.itemId) {
                 R.id.miHome-> {
-                    val intent = Intent(this@Profile, Home::class.java)
+                    val intent = Intent(this@Profile, Homepage::class.java)
                     startActivity(intent)
 
                     return@setOnItemSelectedListener true

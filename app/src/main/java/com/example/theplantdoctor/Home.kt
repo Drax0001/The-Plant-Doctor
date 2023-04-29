@@ -10,15 +10,21 @@ import android.view.View
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.cardview.widget.CardView
+import com.bumptech.glide.Glide
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.android.material.floatingactionbutton.FloatingActionButton
+import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
+import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ValueEventListener
 import kotlin.random.Random
 
 class Home : AppCompatActivity() {
+
+    private lateinit var mAuth: FirebaseAuth
+    private lateinit var mDbRef: DatabaseReference
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
@@ -30,8 +36,15 @@ class Home : AppCompatActivity() {
         val greetings = findViewById<TextView>(R.id.tv_greetings)
         val profilePic = findViewById<ImageView>(R.id.iv_profile )
         val plant = findViewById<CardView>(R.id.cv_ai_plant)
-        val database = FirebaseDatabase.getInstance().reference
         val careTips = findViewById<TextView>(R.id.tv_tips)
+
+        mAuth = FirebaseAuth.getInstance()
+        mDbRef = FirebaseDatabase.getInstance().getReference()
+//
+//        val currentUser = mAuth.currentUser
+//
+//        mDbRef.child("user").child(mAuth.currentUser?.uid!!).val
+//        greetings.text = "Hello, "+
 
         val tipsArray = arrayOf(
             "Choose plants based on your light",

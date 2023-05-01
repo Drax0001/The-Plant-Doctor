@@ -142,8 +142,14 @@ class Profile : AppCompatActivity() {
 
                     return@setOnItemSelectedListener true
                 }
-                R.id.miYou -> {
-                    val intent = Intent(this@Profile, Profile::class.java)
+//                R.id.miYou -> {
+//                    val intent = Intent(this@Profile, Profile::class.java)
+//                    startActivity(intent)
+//
+//                    return@setOnItemSelectedListener true
+//                }
+                R.id.miOther-> {
+                    val intent = Intent(this@Profile, Other::class.java)
                     startActivity(intent)
 
                     return@setOnItemSelectedListener true

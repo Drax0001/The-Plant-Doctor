@@ -8,6 +8,7 @@ import android.widget.ImageView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.SearchView
+import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.bottomnavigation.BottomNavigationView
@@ -26,10 +27,22 @@ class Homepage :AppCompatActivity(){
         super.onCreate(savedInstanceState)
         setContentView(R.layout.homepage)
 
-        val Robot= findViewById<ImageView>(R.id.robot)
-        Robot.setOnClickListener{
+        val robot= findViewById<CardView>(R.id.robot)
+        val chatPage = findViewById<CardView>(R.id.cv_chat_doctors)
+        val diseaseDico = findViewById<CardView>(R.id.cv_disease_encyclopedia)
+        val homePicture = findViewById<ImageView>(R.id.iv_home_profile)
+
+        robot.setOnClickListener{
             startActivity(Intent(this,Chatbot::class.java))
-            startActivity(intent)
+        }
+        chatPage.setOnClickListener{
+            startActivity(Intent(this,ChatPage::class.java))
+        }
+        diseaseDico.setOnClickListener{
+            startActivity(Intent(this,Diseases::class.java))
+        }
+        homePicture.setOnClickListener{
+            startActivity(Intent(this,Profile::class.java))
         }
 
         searchView = findViewById(R.id.Search)
@@ -83,6 +96,12 @@ class Homepage :AppCompatActivity(){
                 }
                 R.id.miYou -> {
                     val intent = Intent(this@Homepage, Profile::class.java)
+                    startActivity(intent)
+
+                    return@setOnItemSelectedListener true
+                }
+                R.id.miOther-> {
+                    val intent = Intent(this@Homepage, Other::class.java)
                     startActivity(intent)
 
                     return@setOnItemSelectedListener true

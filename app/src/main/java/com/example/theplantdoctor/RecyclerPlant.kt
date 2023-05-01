@@ -1,5 +1,6 @@
 package com.example.theplantdoctor
 
+import android.content.Intent
 import androidx.recyclerview.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
@@ -34,9 +35,19 @@ class RecyclerPlant constructor(private val getActivity: Homepage,
         return plantList.size
     }
 
-    class MyViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+    inner class MyViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val plt1: ImageView = itemView.findViewById(R.id.plt1)
         val imgTitle: TextView = itemView.findViewById(R.id.Title)
         val item1: CardView = itemView.findViewById(R.id.item1)
+
+        init {
+            itemView.setOnClickListener {v: View ->
+                val position: Int = adapterPosition
+                val intent = Intent(itemView.context, PlantDetails::class.java)
+                intent.putExtra("imageId",plantList[position].image)
+                intent.putExtra("title", plantList[position].title)
+                itemView.context.startActivity(intent)
+            }
+        }
     }
 }

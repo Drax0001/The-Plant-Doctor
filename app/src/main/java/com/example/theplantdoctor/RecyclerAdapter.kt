@@ -17,6 +17,7 @@ class RecyclerAdapter(private var titles: List<String>, private var details: Lis
     inner class ViewHolder(itemView: View): RecyclerView.ViewHolder(itemView){
         val diseaseTitle: TextView = itemView.findViewById(R.id.tv_disease_title)
         val diseaseDetail: TextView = itemView.findViewById(R.id.tv_disease_desc)
+        val diseaseTreatment: TextView = itemView.findViewById(R.id.tv_treatment)
         val diseasePicture: ImageView = itemView.findViewById(R.id.iv_disease_pic)
 
         init {
@@ -26,6 +27,7 @@ class RecyclerAdapter(private var titles: List<String>, private var details: Lis
                 val intent = Intent(itemView.context, Treatment::class.java)
                 intent.putExtra("title", diseaseTitle.text)
                 intent.putExtra("description", diseaseDetail.text)
+                intent.putExtra("treatment", diseaseTreatment.text)
                 intent.putExtra("imageId",images[position])
 
                 itemView.context.startActivity(intent)
@@ -45,6 +47,7 @@ class RecyclerAdapter(private var titles: List<String>, private var details: Lis
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.diseaseTitle.text = titles[position]
         holder.diseaseDetail.text = details[position]
+        holder.diseaseTreatment.text = details[position]
         holder.diseasePicture.setImageResource(images[position])
     }
 }

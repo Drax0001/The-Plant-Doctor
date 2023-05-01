@@ -30,16 +30,19 @@ class Treatment : AppCompatActivity() {
 
         val title = intent.getStringExtra("title")
         val description = intent.getStringExtra("description")
+        val treatment = intent.getStringExtra("treatment")
         val imageId = intent.getIntExtra("imageId", 0)
 
         val diseaseTitle = findViewById<TextView>(R.id.tv_disease_title)
         val diseaseProblem = findViewById<TextView>(R.id.tv_disease_problem)
+        val diseaseTreatment = findViewById<TextView>(R.id.tv_disease_treatment)
         val diseasePicture = findViewById<ImageView>(R.id.iv_disease_pic)
         val cardImage = findViewById<CardView>(R.id.cv_image_container)
         val saveImage = findViewById<ImageView>(R.id.iv_save_img)
 
         diseaseTitle.text = title
         diseaseProblem.text = description
+        diseaseTreatment.text = treatment
         diseasePicture.setImageResource(imageId)
 
         saveImage.setOnClickListener {

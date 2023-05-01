@@ -82,6 +82,12 @@ class ChatPage : AppCompatActivity() {
 
                     return@setOnItemSelectedListener true
                 }
+                R.id.miOther-> {
+                    val intent = Intent(this@ChatPage, Other::class.java)
+                    startActivity(intent)
+
+                    return@setOnItemSelectedListener true
+                }
 
             }
             false

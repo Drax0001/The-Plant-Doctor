@@ -81,14 +81,20 @@ class AiRecognition : AppCompatActivity() {
 
                     return@setOnItemSelectedListener true
                 }
-                R.id.miCamera -> {
-                    val intent = Intent(this@AiRecognition, AiRecognition::class.java)
+//                R.id.miCamera -> {
+//                    val intent = Intent(this@AiRecognition, AiRecognition::class.java)
+//                    startActivity(intent)
+//
+//                    return@setOnItemSelectedListener true
+//                }
+                R.id.miYou -> {
+                    val intent = Intent(this@AiRecognition, Profile::class.java)
                     startActivity(intent)
 
                     return@setOnItemSelectedListener true
                 }
-                R.id.miYou -> {
-                    val intent = Intent(this@AiRecognition, Profile::class.java)
+                R.id.miOther-> {
+                    val intent = Intent(this@AiRecognition, Other::class.java)
                     startActivity(intent)
 
                     return@setOnItemSelectedListener true

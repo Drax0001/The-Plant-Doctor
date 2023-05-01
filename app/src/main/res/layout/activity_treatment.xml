@@ -61,7 +61,7 @@
                 android:text="Powdery Mildew"
                 android:textAllCaps="true"
                 android:textColor="@color/tertiary"
-                android:textSize="44.5sp"
+                android:textSize="42sp"
                 app:layout_constraintBottom_toTopOf="@+id/h2"
                 app:layout_constraintEnd_toStartOf="@+id/v20"
                 app:layout_constraintStart_toStartOf="@+id/v1"

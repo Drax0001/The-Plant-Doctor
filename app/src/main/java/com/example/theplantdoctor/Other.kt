@@ -3,13 +3,24 @@ package com.example.theplantdoctor
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class Other : AppCompatActivity() {
+    private var layoutManager: RecyclerView.LayoutManager? = null
+    private var adapter: RecyclerView.Adapter<TeamRecyclerAdapter.ViewHolder>? = null
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_other)
 
+        val recyclerview = findViewById<RecyclerView>(R.id.rv_team)
+
+        layoutManager = LinearLayoutManager(this)
+        recyclerview.layoutManager = layoutManager
+        adapter = TeamRecyclerAdapter()
+        recyclerview.adapter = adapter
 
         val bottomNavigationView = findViewById<BottomNavigationView>(R.id.bottom_nav)
 

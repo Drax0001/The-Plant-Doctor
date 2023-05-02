@@ -19,16 +19,26 @@
         android:id="@+id/tv_plant_name"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
         android:fontFamily="@font/karla_extrabold"
         android:text="Plant Name"
         android:textAllCaps="true"
         android:textColor="@color/primary"
-        android:textSize="40sp"
-        android:layout_marginTop="10dp"
-        app:layout_constraintEnd_toStartOf="@+id/guideline25"
+        android:textSize="35sp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline41"
         app:layout_constraintStart_toStartOf="@+id/guideline24"
         app:layout_constraintTop_toTopOf="@+id/guideline26" />
 
+    <ImageView
+        android:id="@+id/iv_add_plant"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/outline_star_border_24"
+        android:layout_margin="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline42"
+        app:layout_constraintEnd_toStartOf="@+id/guideline25"
+        app:layout_constraintStart_toStartOf="@+id/guideline41"
+        app:layout_constraintTop_toTopOf="@+id/guideline26" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline24"
@@ -50,6 +60,20 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.6" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline41"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.8" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline42"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.68" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

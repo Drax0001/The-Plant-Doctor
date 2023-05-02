@@ -61,7 +61,7 @@ class Diseases : AppCompatActivity() {
     }
 
     private fun postToList() {
-        for (i in 0..6) {
+        for (i in 0 until titleMutableList.size) {
             addToList(titleMutableList[i], descMutableList[i], imagesMutableList[i], treatmentMutableList[i])
         }
     }

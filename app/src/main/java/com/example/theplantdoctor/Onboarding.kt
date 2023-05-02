@@ -97,7 +97,7 @@ class Onboarding : AppCompatActivity() {
         }
 
         btnSkip.setOnClickListener {
-            val intent = Intent(this@Onboarding, Homepage::class.java)
+            val intent = Intent(this@Onboarding, GetStarted::class.java)
             startActivity(intent)
             finish()
         }

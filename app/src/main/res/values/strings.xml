@@ -33,4 +33,6 @@
     <string name="title_activity_test_tab">testTab</string>
     <string name="tab_text_1">Tab 1</string>
     <string name="tab_text_2">Tab 2</string>
+    <string name="this_is_a_sample_message_that_will_appear">This is a sample message that will appear</string>
+    <string name="tv_message">This is a sample message that will appear</string>
 </resources>

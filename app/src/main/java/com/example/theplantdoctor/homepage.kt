@@ -3,7 +3,6 @@ package com.example.theplantdoctor
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
-import android.widget.Button
 import android.widget.ImageView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -33,7 +32,7 @@ class Homepage :AppCompatActivity(){
         val homePicture = findViewById<ImageView>(R.id.iv_home_profile)
 
         robot.setOnClickListener{
-            startActivity(Intent(this,Chatbot::class.java))
+            startActivity(Intent(this, Chatbot::class.java))
         }
         chatPage.setOnClickListener{
             startActivity(Intent(this,ChatPage::class.java))

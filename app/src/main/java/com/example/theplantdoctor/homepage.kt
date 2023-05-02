@@ -3,36 +3,19 @@ package com.example.theplantdoctor
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
-import android.widget.Button
-import android.widget.ImageView
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import androidx.appcompat.widget.SearchView
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.bottomnavigation.BottomNavigationView
-import java.util.*
-import kotlin.collections.ArrayList
 
 class Homepage :AppCompatActivity(){
-
     private var recyclerView: RecyclerView? = null
     private var recyclerViewMovieAdapter: RecyclerPlant? = null
     private var plantList = mutableListOf<Plant>()
-    private lateinit var searchView:SearchView
-
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.homepage)
-
-        val robot=findViewById<ImageView>(R.id.robot)
-        robot.setOnClickListener{
-            startActivity(Intent(this,Chatbot::class.java))
-        }
-
-        searchView = findViewById(R.id.Search)
-        searchView.clearFocus()
 
 
         plantList = ArrayList()
@@ -43,25 +26,13 @@ class Homepage :AppCompatActivity(){
         recyclerView!!.layoutManager = layoutManager
         recyclerView!!.adapter = recyclerViewMovieAdapter
 
-        preparePlantListData()
-        searchView.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
-            override fun onQueryTextSubmit(query: String?): Boolean {
-                return false
-            }
-
-            override fun onQueryTextChange(newText: String?): Boolean {
-                filterList(newText)
-                return true
-
-            }
-
-        })
+        prepareMovieListData()
 
         val bottomNavigationView = findViewById<BottomNavigationView>(R.id.bottom_nav)
 
         bottomNavigationView?.setOnItemSelectedListener { item ->
             when (item.itemId) {
-                R.id.miHome -> {
+                R.id.miHome-> {
                     val intent = Intent(this@Homepage, Homepage::class.java)
                     startActivity(intent)
 
@@ -93,33 +64,17 @@ class Homepage :AppCompatActivity(){
 
 
     }
-    private fun filterList(query:String?){
-        if(query!=null){
-            val filteredList= ArrayList<Plant>()
-            for(i in plantList){
-                if(i.title.lowercase(Locale.ROOT).contains(query)){
-                    filteredList.add(i)
-                }
-            }
-            if(filteredList.isEmpty()){
-                Toast.makeText(this, "No Data Found", Toast.LENGTH_SHORT).show()
-            }else{
-               recyclerViewMovieAdapter!!.setfilteredList(filteredList)
 
-            }
-        }
-    }
-
-    private fun preparePlantListData() {
-        var plant = Plant( R.drawable.plant1,"Monstera")
+    private fun prepareMovieListData() {
+        var plant = Plant( R.drawable.plant1, "Monstera")
         plantList.add(plant)
-        plant = Plant( R.drawable.plant3, "Dracaena")
+        plant = Plant( R.drawable.plant2, "Dracaena")
         plantList.add(plant)
-        plant= Plant( R.drawable.plant4, "Peperomia")
+        plant = Plant( R.drawable.plant3, "Peperomia")
         plantList.add(plant)
-        plant = Plant( R.drawable.plant5, "planla")
+        plant= Plant( R.drawable.plant4, "Planla")
         plantList.add(plant)
-        plant = Plant( R.drawable.plant2, "Monstera")
+        plant = Plant( R.drawable.plant5, "Monstera")
         plantList.add(plant)
         plant = Plant( R.drawable.plant6, "Pleomele")
         plantList.add(plant)
@@ -137,9 +92,9 @@ class Homepage :AppCompatActivity(){
         plantList.add(plant)
         plant = Plant( R.drawable.plant13, "Marble")
         plantList.add(plant)
-        plant = Plant( R.drawable.plant14, "pilea")
+        plant = Plant( R.drawable.plant14, "Pilea")
         plantList.add(plant)
-        plant = Plant( R.drawable.plant16, "indoor cactus")
+        plant = Plant( R.drawable.plant16, "Indoor Cactus")
         plantList.add(plant)
         plant = Plant( R.drawable.plant17, "Laurentii")
         plantList.add(plant)
@@ -147,7 +102,7 @@ class Homepage :AppCompatActivity(){
         plantList.add(plant)
         plant = Plant( R.drawable.plant19, "Leaves")
         plantList.add(plant)
-        plant = Plant( R.drawable.plant20, "Fiddle leaf fig")
+        plant = Plant( R.drawable.plant20, "Monstera")
         plantList.add(plant)
         plant = Plant( R.drawable.plant21, "Monstera")
         plantList.add(plant)

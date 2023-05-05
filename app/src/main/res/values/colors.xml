@@ -16,4 +16,18 @@
     <color name="Green">#E4E8CB</color>
     <color name="Green4">#cfdbbd</color>
     <color name="complementary">#efe7db</color>
+
+    <color name="night_mode">#6124B1</color>
+    <color name="notifications">#13B2C3</color>
+    <color name="private_account">#E6A326</color>
+    <color name="security">#214B80</color>
+    <color name="bottom_bar_indicator_color">#D4F5FA</color>
+    <color name="bottom_bar_icon_tint_active">#35B7CF</color>
+    <color name="bottom_bar_icon_tint">#CFD0E2</color>
+    <color name="bottom_bar_text_color">#35B7CF</color>
+    <color name="background">#F8FCFD</color>
+    <color name="primary_label">#212121</color>
+    <color name="secondary_label">#757575</color>
+    <color name="search_background">#F3F6FB</color>
+    <color name="favourite_Background">#FF7173</color>
 </resources>

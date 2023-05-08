@@ -57,6 +57,7 @@
             android:orientation="vertical"
             app:layout_constraintGuide_percent="0.8" />
 
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.cardview.widget.CardView>

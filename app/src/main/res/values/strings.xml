@@ -36,5 +36,14 @@
     <string name="this_is_a_sample_message_that_will_appear">This is a sample message that will appear</string>
     <string name="tv_message">This is a sample message that will appear</string>
     <string name="change_theme">Change Theme</string>
+
+    <string name="clauvet"><a href="tel:=+237682876311">Clauvet</a></string>
+    <string name="berthold"><a href="tel:=+237673046720">Berthold</a></string>
+    <string name="xaviera"><a href="tel:=+237678117004">Xaviera</a></string>
+    <string name="brandon"><a href="tel:=+237654131445">Brandon</a></string>
+    <string name="brian"><a href="tel:=+237674959577">Brian</a></string>
+    <string name="michael"><a href="tel:=+237651914415">Joshua</a></string>
+    <string name="anna"><a href="tel:=+237676379879">Noella</a></string>
+    <string name="mary"><a href="tel:=+237653033620">Mercy</a></string>
     <string name="choose_theme_text" />
 </resources>

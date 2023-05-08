@@ -157,7 +157,7 @@ class Profile : AppCompatActivity() {
             }
             false
         }
-             //
+             //move to settings page
         val move = findViewById<Button>(R.id.setting)
         move.setOnClickListener {
             val intent = Intent(this, settings::class.java)

@@ -35,4 +35,6 @@
     <string name="tab_text_2">Tab 2</string>
     <string name="this_is_a_sample_message_that_will_appear">This is a sample message that will appear</string>
     <string name="tv_message">This is a sample message that will appear</string>
+    <string name="change_theme">Change Theme</string>
+    <string name="choose_theme_text" />
 </resources>

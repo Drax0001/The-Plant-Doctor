@@ -126,7 +126,7 @@
                         android:id="@+id/nightMode"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Night Mode"
+                        android:text="@string/change_theme"
                         android:layout_centerVertical="true"
                         android:layout_toEndOf="@id/nightModeIcon"
                         android:textStyle="bold"

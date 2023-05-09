@@ -40,7 +40,7 @@
                 android:paddingLeft="10dp"
                 android:text="Doctors available to chat"
                 android:textAllCaps="true"
-                android:textColor="@color/primary"
+                android:textColor="?android:textColorPrimary"
                 android:textSize="30sp"
                 app:layout_constraintBottom_toTopOf="@+id/guideline21"
                 app:layout_constraintEnd_toStartOf="@+id/guideline20"

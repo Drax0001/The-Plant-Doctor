@@ -42,7 +42,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="@string/clauvet"
-                            android:textColor="@color/black"
+                            android:textColor="?android:textColorPrimary"
                             android:textSize="26sp"
                             android:textStyle="bold"/>
 
@@ -50,6 +50,7 @@
                             android:id="@+id/lastMessage"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:textColor="?android:textColorPrimary"
                             android:text="Specialied in Bacteriology"
                             android:layout_marginTop="5sp"
                             android:paddingStart="5sp"/> />
@@ -96,13 +97,14 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="@string/berthold"
-                            android:textColor="@color/black"
+                            android:textColor="?android:textColorPrimary"
                             android:textSize="26sp"
                             android:textStyle="bold"/>
 
                         <TextView
                             android:id="@+id/lastMessage2"
                             android:layout_width="match_parent"
+                            android:textColor="?android:textColorPrimary"
                             android:layout_height="wrap_content"
                             android:text="Specialised in Agronomy and Crop Science"
                             android:layout_marginTop="5sp"
@@ -150,7 +152,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="@string/xaviera"
-                            android:textColor="@color/black"
+                            android:textColor="?android:textColorPrimary"
                             android:textSize="26sp"
                             android:textStyle="bold"/>
 
@@ -159,6 +161,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="Specialied in Bryology"
+                            android:textColor="?android:textColorPrimary"
                             android:layout_marginTop="5sp"
                             android:paddingStart="5sp"/> />
                     </LinearLayout>
@@ -204,7 +207,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="@string/brandon"
-                            android:textColor="@color/black"
+                            android:textColor="?android:textColorPrimary"
                             android:textSize="26sp"
                             android:textStyle="bold"/>
 
@@ -212,6 +215,7 @@
                             android:id="@+id/lastMessage4"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:textColor="?android:textColorPrimary"
                             android:text="Specialised in Mycology"
                             android:layout_marginTop="5sp"
                             android:paddingStart="5sp"/> />
@@ -258,7 +262,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="@string/brian"
-                            android:textColor="@color/black"
+                            android:textColor="?android:textColorPrimary"
                             android:textSize="26sp"
                             android:textStyle="bold"/>
 
@@ -266,6 +270,7 @@
                             android:id="@+id/lastMessage5"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:textColor="?android:textColorPrimary"
                             android:text="Specialised in Plant Anatomy and Physiology"
                             android:layout_marginTop="5sp"
                             android:paddingStart="5sp"/> />
@@ -312,7 +317,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="@string/michael"
-                            android:textColor="@color/black"
+                            android:textColor="?android:textColorPrimary"
                             android:textSize="26sp"
                             android:textStyle="bold"/>
 
@@ -320,6 +325,7 @@
                             android:id="@+id/lastMessage6"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:textColor="?android:textColorPrimary"
                             android:text="Specialised in Plant Cell Biology"
                             android:layout_marginTop="5sp"
                             android:paddingStart="5sp"/> />
@@ -366,7 +372,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="@string/anna"
-                            android:textColor="@color/black"
+                            android:textColor="?android:textColorPrimary"
                             android:textSize="26sp"
                             android:textStyle="bold"/>
 
@@ -374,6 +380,7 @@
                             android:id="@+id/lastMessage7"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:textColor="?android:textColorPrimary"
                             android:text="Specialised in Plant Anatomy and Physiology"
                             android:layout_marginTop="5sp"
                             android:paddingStart="5sp"/> />
@@ -420,7 +427,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="@string/mary"
-                            android:textColor="@color/black"
+                            android:textColor="?android:textColorPrimary"
                             android:textSize="26sp"
                             android:textStyle="bold"/>
 
@@ -428,6 +435,7 @@
                             android:id="@+id/lastMessage8"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:textColor="?android:textColorPrimary"
                             android:text="Specialised in Plant cell Biology"
                             android:layout_marginTop="5sp"
                             android:paddingStart="5sp"/> />

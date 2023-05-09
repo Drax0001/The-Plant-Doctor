@@ -12,6 +12,8 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
+<!--        toggle text colors-->
+        <item name="android:textColorPrimary">@color/white</item>
     </style>
     <style name="FullScreen" parent="Theme.ThePlantDoctor">
         <item name="android:windowNoTitle">true</item>

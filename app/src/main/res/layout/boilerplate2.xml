@@ -22,7 +22,7 @@
                 android:layout_height="wrap_content"
                 android:text="Common Diseases"
                 android:fontFamily="@font/karla_extrabold"
-                android:textColor="@color/primary"
+                android:textColor="?android:textColorPrimary"
                 android:textSize="40sp"
                 app:layout_constraintBottom_toTopOf="@+id/h_2"
                 app:layout_constraintEnd_toStartOf="@+id/v_2"

@@ -10,7 +10,7 @@
         android:fontFamily="@font/comfortaa_bold"
         android:textStyle="bold"
         android:textSize="30sp"
-        android:textColor="@color/primary">
+        android:textColor="?android:textColorPrimary">
 
     </TextView>
 

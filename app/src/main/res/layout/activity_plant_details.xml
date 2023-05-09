@@ -23,7 +23,7 @@
         android:fontFamily="@font/karla_extrabold"
         android:text="Plant Name"
         android:textAllCaps="true"
-        android:textColor="@color/primary"
+        android:textColor="?android:textColorPrimary"
         android:textSize="35sp"
         app:layout_constraintEnd_toStartOf="@+id/guideline41"
         app:layout_constraintStart_toStartOf="@+id/guideline24"

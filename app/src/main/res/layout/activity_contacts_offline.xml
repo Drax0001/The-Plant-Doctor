@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="10sp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/i"
+                        android:layout_width="96dp"
+                        android:layout_height="96dp"
+                        android:src="@drawable/i"
+                        app:civ_border_width="2dp"
+                        app:civ_border_color="#FF000000"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/personName1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/clauvet"
+                            android:textColor="?android:textColorPrimary"
+                            android:textSize="26sp"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/lastMessage"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="?android:textColorPrimary"
+                            android:text="Specialied in Bacteriology"
+                            android:layout_marginTop="5sp"
+                            android:paddingStart="5sp"/> />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/lastMsgTime1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="22dp"
+                    android:text="7:00 pm"
+                    android:layout_marginTop="5sp"
+                    android:padding="10sp"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="10sp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/b"
+                        android:layout_width="96dp"
+                        android:layout_height="96dp"
+                        android:src="@drawable/b"
+                        app:civ_border_width="2dp"
+                        app:civ_border_color="#FF000000"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/personName2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/berthold"
+                            android:textColor="?android:textColorPrimary"
+                            android:textSize="26sp"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/lastMessage2"
+                            android:layout_width="match_parent"
+                            android:textColor="?android:textColorPrimary"
+                            android:layout_height="wrap_content"
+                            android:text="Specialised in Agronomy and Crop Science"
+                            android:layout_marginTop="5sp"
+                            android:paddingStart="5sp"/> />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/lastMsgTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="22dp"
+                    android:text="9:35 am"
+                    android:layout_marginTop="5sp"
+                    android:padding="10sp"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="10sp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/c"
+                        android:layout_width="96dp"
+                        android:layout_height="96dp"
+                        android:src="@drawable/c"
+                        app:civ_border_width="2dp"
+                        app:civ_border_color="#FF000000"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/name3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/xaviera"
+                            android:textColor="?android:textColorPrimary"
+                            android:textSize="26sp"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/lastMessage3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Specialied in Bryology"
+                            android:textColor="?android:textColorPrimary"
+                            android:layout_marginTop="5sp"
+                            android:paddingStart="5sp"/> />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/lastMsgTime3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="22dp"
+                    android:text="8:40 am"
+                    android:layout_marginTop="5sp"
+                    android:padding="10sp"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="10sp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/d"
+                        android:layout_width="96dp"
+                        android:layout_height="96dp"
+                        android:src="@drawable/d"
+                        app:civ_border_width="2dp"
+                        app:civ_border_color="#FF000000"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/name4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/brandon"
+                            android:textColor="?android:textColorPrimary"
+                            android:textSize="26sp"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/lastMessage4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="?android:textColorPrimary"
+                            android:text="Specialised in Mycology"
+                            android:layout_marginTop="5sp"
+                            android:paddingStart="5sp"/> />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/lastMsgTime4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="22dp"
+                    android:text="8:32 pm"
+                    android:layout_marginTop="5sp"
+                    android:padding="10sp"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="10sp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/e"
+                        android:layout_width="96dp"
+                        android:layout_height="96dp"
+                        android:src="@drawable/e"
+                        app:civ_border_width="2dp"
+                        app:civ_border_color="#FF000000"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/name5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/brian"
+                            android:textColor="?android:textColorPrimary"
+                            android:textSize="26sp"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/lastMessage5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="?android:textColorPrimary"
+                            android:text="Specialised in Plant Anatomy and Physiology"
+                            android:layout_marginTop="5sp"
+                            android:paddingStart="5sp"/> />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/lastMsgTime5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="22dp"
+                    android:text="10:02 am"
+                    android:layout_marginTop="5sp"
+                    android:padding="10sp"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="10sp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/f"
+                        android:layout_width="96dp"
+                        android:layout_height="96dp"
+                        android:src="@drawable/f"
+                        app:civ_border_width="2dp"
+                        app:civ_border_color="#FF000000"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/name6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/michael"
+                            android:textColor="?android:textColorPrimary"
+                            android:textSize="26sp"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/lastMessage6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="?android:textColorPrimary"
+                            android:text="Specialised in Plant Cell Biology"
+                            android:layout_marginTop="5sp"
+                            android:paddingStart="5sp"/> />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/lastMsgTime6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="22dp"
+                    android:text="11:11 am"
+                    android:layout_marginTop="5sp"
+                    android:padding="10sp"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="10sp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/h"
+                        android:layout_width="96dp"
+                        android:layout_height="96dp"
+                        android:src="@drawable/h"
+                        app:civ_border_width="2dp"
+                        app:civ_border_color="#FF000000"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/name7"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/anna"
+                            android:textColor="?android:textColorPrimary"
+                            android:textSize="26sp"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/lastMessage7"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="?android:textColorPrimary"
+                            android:text="Specialised in Plant Anatomy and Physiology"
+                            android:layout_marginTop="5sp"
+                            android:paddingStart="5sp"/> />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/lastMsgTime7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="22dp"
+                    android:text="11:11 am"
+                    android:layout_marginTop="5sp"
+                    android:padding="10sp"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="10sp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/g"
+                        android:layout_width="96dp"
+                        android:layout_height="96dp"
+                        android:src="@drawable/g"
+                        app:civ_border_width="2dp"
+                        app:civ_border_color="#FF000000"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/name8"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/mary"
+                            android:textColor="?android:textColorPrimary"
+                            android:textSize="26sp"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/lastMessage8"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="?android:textColorPrimary"
+                            android:text="Specialised in Plant cell Biology"
+                            android:layout_marginTop="5sp"
+                            android:paddingStart="5sp"/> />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/lastMsgTime8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="22dp"
+                    android:text="9:20 am"
+                    android:layout_marginTop="5sp"
+                    android:padding="10sp"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

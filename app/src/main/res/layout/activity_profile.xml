@@ -24,7 +24,7 @@
                 android:layout_height="wrap_content"
                 android:text="Profile"
                 android:fontFamily="@font/karla_extrabold"
-                android:textColor="@color/primary"
+                android:textColor="?android:textColorPrimary"
                 android:textSize="50sp"
                 app:layout_constraintBottom_toTopOf="@+id/h_2"
                 app:layout_constraintEnd_toStartOf="@+id/v_2"
@@ -132,7 +132,7 @@
                         android:fontFamily="@font/comfortaa_bold"
                         android:text="Username"
                         android:textAlignment="center"
-                        android:textColor="@color/primary"
+                        android:textColor="?android:textColorPrimary"
                         android:textSize="28sp"
                         app:layout_constraintBottom_toTopOf="@+id/h5"
                         app:layout_constraintEnd_toStartOf="@+id/v2"
@@ -146,7 +146,7 @@
                         android:fontFamily="@font/comfortaa_semibold"
                         android:text="Bio"
                         android:textAlignment="center"
-                        android:textColor="@color/primary"
+                        android:textColor="?android:textColorPrimary"
                         android:textSize="20sp"
                         app:layout_constraintBottom_toTopOf="@+id/h4"
                         app:layout_constraintEnd_toStartOf="@+id/v2"
@@ -160,7 +160,7 @@
                         android:fontFamily="@font/comfortaa_regular"
                         android:text="E-Mail"
                         android:textAlignment="center"
-                        android:textColor="@color/primary"
+                        android:textColor="?android:textColorPrimary"
                         android:textSize="15sp"
                         app:layout_constraintBottom_toTopOf="@+id/h3"
                         app:layout_constraintEnd_toStartOf="@+id/v2"
@@ -220,6 +220,7 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/cardView2"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 app:cardCornerRadius="20dp"
@@ -235,12 +236,12 @@
                     android:background="@color/secondary">
 
                     <TextView
-                       android:id="@+id/view1"
+                        android:id="@+id/view1"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:text="Plant Garden"
+                        android:textColor="?android:textColorPrimary"
                         android:textSize="23sp"
-                        android:textColor="@color/primary"
                         app:layout_constraintBottom_toTopOf="@+id/h10"
                         app:layout_constraintEnd_toStartOf="@+id/v7"
                         app:layout_constraintStart_toStartOf="@+id/v5"
@@ -254,12 +255,13 @@
                         app:layout_constraintEnd_toStartOf="@+id/v6"
                         app:layout_constraintStart_toStartOf="@+id/v7"
                         app:layout_constraintTop_toTopOf="@+id/h10" />
+
                     <TextView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:text="Favorites"
+                        android:textColor="?android:textColorPrimary"
                         android:textSize="23sp"
-                        android:textColor="@color/primary"
                         app:layout_constraintBottom_toTopOf="@+id/h12"
                         app:layout_constraintEnd_toStartOf="@+id/v7"
                         app:layout_constraintStart_toStartOf="@+id/v5"
@@ -278,8 +280,8 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:text="My plants"
+                        android:textColor="?android:textColorPrimary"
                         android:textSize="23sp"
-                        android:textColor="@color/primary"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toStartOf="@+id/v7"
                         app:layout_constraintStart_toStartOf="@+id/v5"
@@ -300,24 +302,28 @@
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
                         app:layout_constraintGuide_percent="0.33" />
+
                     <androidx.constraintlayout.widget.Guideline
                         android:id="@+id/h12"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
                         app:layout_constraintGuide_percent="0.66" />
+
                     <androidx.constraintlayout.widget.Guideline
                         android:id="@+id/v5"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="vertical"
                         app:layout_constraintGuide_percent="0.05" />
+
                     <androidx.constraintlayout.widget.Guideline
                         android:id="@+id/v7"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="vertical"
                         app:layout_constraintGuide_percent="0.75" />
+
                     <androidx.constraintlayout.widget.Guideline
                         android:id="@+id/v6"
                         android:layout_width="wrap_content"
@@ -328,6 +334,19 @@
                 </androidx.constraintlayout.widget.ConstraintLayout>
             </androidx.cardview.widget.CardView>
 
+            <Button
+                android:id="@+id/setting"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/btn_background"
+                android:elevation="5dp"
+                android:text="Settings"
+                android:textColor="@color/primary"
+                app:layout_constraintBottom_toTopOf="@+id/btn_logout"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardView2" />
             <Button
                 android:id="@+id/btn_logout"
                 android:layout_width="0dp"

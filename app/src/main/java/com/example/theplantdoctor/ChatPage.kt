@@ -3,6 +3,8 @@ package com.example.theplantdoctor
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
+import android.widget.LinearLayout
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.bottomnavigation.BottomNavigationView
@@ -91,6 +93,12 @@ class ChatPage : AppCompatActivity() {
 
             }
             false
+        }
+
+        val offline = findViewById<Button>(R.id.contact)
+        offline.setOnClickListener {
+            val intent = Intent(this, contactsOffline::class.java)
+            startActivity(intent)
         }
     }
 }

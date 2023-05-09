@@ -26,7 +26,7 @@
         android:text="The Plant Doctor"
         android:textAlignment="center"
         android:textAllCaps="true"
-        android:textColor="@color/primary"
+        android:textColor="?android:textColorPrimary"
         android:textSize="45sp"
         app:layout_constraintBottom_toTopOf="@+id/guideline23"
         app:layout_constraintEnd_toEndOf="parent"

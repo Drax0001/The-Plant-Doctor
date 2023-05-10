@@ -14,7 +14,7 @@ import org.json.JSONArray
 import org.json.JSONObject
 import java.io.IOException
 
-class MainActivity : AppCompatActivity() {
+class Chatbot : AppCompatActivity() {
     private val client = OkHttpClient()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -36,7 +36,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
     fun getResponse(question: String, callback: (String) -> Unit){
-        val apiKey="YOUR_API_KEY"
+        val apiKey="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"
         val url="https://api.openai.com/v1/engines/text-davinci-003/completions"
 
         val requestBody="""

@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.*
+import androidx.appcompat.app.AlertDialog
 import de.hdodenhof.circleimageview.CircleImageView
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.firebase.auth.FirebaseAuth
@@ -113,9 +114,20 @@ class Profile : AppCompatActivity() {
         })
 
         btnLogOut.setOnClickListener {
-            mAuth.signOut()
-            finish()
-            startActivity(Intent(this@Profile, Login::class.java))
+
+            val addContactDialog = AlertDialog.Builder(this)
+                .setTitle("The Plant Doctor says:")
+                .setMessage("You are going to be logged out of your account. Do you wish to continue?")
+                .setIcon(R.drawable.chat_bot)
+                .setNegativeButton("No") { _, _ ->
+                    //
+                }
+                .setPositiveButton("Yes") { _, _ ->
+                    mAuth.signOut()
+                    finish()
+                    Toast.makeText(this, "You have been logged out", Toast.LENGTH_SHORT).show()
+                    startActivity(Intent(this, Chatbot::class.java))
+                }.create()
         }
 
         //Bottom nav click listeners
